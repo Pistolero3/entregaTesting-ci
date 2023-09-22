@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ConfirmationDialogComponent spec should display the title using snapshot testing 1`] = `<DocumentFragment />`;
