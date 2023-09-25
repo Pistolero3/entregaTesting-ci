@@ -8,8 +8,8 @@ export const SpinnerComponent: React.FunctionComponent = () => {
   const { promiseInProgress } = usePromiseTracker();
   return (
     <Modal open={promiseInProgress} className={classes.modal}>
-      <div className={classes.loaderContainer}>
-        <Loader />
+      <div data-testid="loaderContainer" className={classes.loaderContainer}>
+        <Loader data-testid="loader" />
       </div>
     </Modal>
   );
