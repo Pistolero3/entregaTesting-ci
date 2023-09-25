@@ -13,7 +13,7 @@ jobs:
       - name: Tests E2E
         run: npm run test:e2e:ci
       - name: Upload screenshots when specs fail
-        if: ${{failure{}}}
+        if: ${{failure()}}
         uses: actions/upload-artifact@v3
         with:
           name: screenshots
